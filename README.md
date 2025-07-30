@@ -1,4 +1,4 @@
-# copyBluetoothKeyFromWin.sh
+# Copy bluetooth keys from Win to Linux
 
 **Disclaimer:** Use at your own risk. 
 
@@ -33,8 +33,8 @@ If you do not follow this order, the keys may not be compatible and the device m
    ```
 4. **Follow the interactive prompts:**
    - Select your Windows partition to mount
-   - Select your Bluetooth adapter (if more than one)
-   - Choose to copy all keys or a single device
+   - Select your local Bluetooth adapter (if more than one)
+   - Choose to copy keys from all paired devices or a single device
    - The script will extract, convert, and update the Linux Bluetooth info files
 5. **Reboot your system** for the changes to take effect.
 
@@ -57,6 +57,8 @@ If you do not follow this order, the keys may not be compatible and the device m
   - Always run the script with `sudo` to ensure access to system files
 - **BitLocker-encrypted Windows partition?**
   - You must unlock it before running the script
+- **Cannot set key in Linux**
+  - If you did not following the prerequisite pairing order, linux might miss the entry for the bluetooth device.
 
 ---
 
